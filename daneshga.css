@@ -1,29 +1,72 @@
+@font-face {
+    font-family: "iranyekan" ;
+    src: url("fonts/iranyekan/eot/iranyekanwebregular.eot?#") ,
+    url("fonts/iranyekan/ttf/iranyekanwebregular.ttf") format('truetype'),
+    url("fonts/iranyekan/woff/iranyekanwebregular.woff") format('woff'),
+    url("fonts/iranyekan/svg/iranyekanwebregular.svg") format('svg');
+}
+@font-face {
+    font-family: "iranyekan_numbers" ;
+    src: url("fonts/iranyekan_numbers/eot/iranyekanwebregular(fanum).eot?#") ,
+    url("fonts/iranyekan_numbers/ttf/iranyekanwebregular(fanum).ttf") format('truetype'),
+    url("fonts/iranyekan_numbers/woff/iranyekanwebregular(fanum).woff") format('woff'),
+    url("fonts/iranyekan_numbers/svg/iranyekanwebregular(fanum).svg") format('svg');
+}
 *{
     margin: 0;
     padding: 0;
 }
 body{
-    background-color: rgb(103, 103, 223);
-    background-image: linear-gradient(, red, blue);
+    font-family: 'iranyekan_numbers','iranyekan';
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #706960);
 }
 header {
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     width: 100%;
 }
 header .container {
-    width: 80%;
+    width: 33%;
     margin: 2rem auto;
     text-align: center;
     font-weight: bolder;
     font-size: 2rem;
-    background-color: pink;
+    background-color: #ebf8e1;
+    padding: 0.5rem;
+    color: #3f87a6;
+    border-radius: 0.2rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+header .container p {
+    display: inline-block;
+    animation: animate__shakeY; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; 
 }
 .container2 {
+    padding-bottom: 1.5rem;
     width: 80%;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 } 
+.container2 .search {
+    background-color: #3f87a6;
+    padding: 1rem;
+    border-radius: 0.3rem;
+}
+.container2 .search svg {
+    color: #dce8ed;
+}
+.container2 .search input{
+    background-color: #dce8ed;
+    padding: 0.2rem;
+    color: #3f87a6;
+    border: #b0b0f1 1px solid;
+}
+.container2 .search select {
+    background-color: #dce8ed;
+}
 .card {
     display: grid;
     grid-template-columns: 22% 22% 22% 22%;
