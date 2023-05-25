@@ -37,7 +37,7 @@ header .container {
     margin: 0 auto;
 }
 header .container .p {
-    width: 45%;
+    width: 50%;
     text-align: start;
     font-weight: bolder;
     font-size: 2rem;
@@ -45,15 +45,15 @@ header .container .p {
     color: #3f87a6;
     border-radius: 0.2rem;
 }
-header .container a {
-    margin-top: 0.5rem;
+.animate__shakeX {
+    animation-duration: 1s;
 }
-cube {
-    margin-top: 0.5rem;
+.cube {
+    direction: rtl;
+    margin-top: 1.5rem;
     position: relative;
     transform-style: preserve-3d;
-    width: 100%;
-    height: 100%;
+    width: 20%;
     transition: transform 2s cubic-bezier(0.25, 1, 0.5, 1);
 }
 .cube:hover {
@@ -69,19 +69,25 @@ cube {
 }
 .cube__face--front {
     transform: rotateX(0deg);
+    font-size: 0.81rem;
+    padding: 0.1rem;
+    color: #3f87a6;
+    width: 50%;
+    border: #b0b0f1 1px solid;
+}
+.cube__face--back svg {
+    color: #3f87a6;
 }
 .cube__face--back {
+    width: 55%;
     transform: rotateX(90deg);
-    color: #3b4042;
+    margin: 0 auto;
 }
 header .input {
     display: flex;
     flex-direction: row;
     width: 90%;
     margin: 0 auto;
-}
-header .input .search {
-    
 }
 header .input .search svg {
     color: #3b4042;
@@ -99,19 +105,13 @@ header .input .search select {
     margin-left: 1rem;
     padding: 0.1rem;
 }
-.card {
+article{
     display: grid;
     grid-template-columns: 22% 22% 22% 22%;
+    margin: auto;
     gap: 4%;
-    width: 80%;
-    margin: 1rem auto;    
+    width: 85%;
 }
-section {
-    width: 100%;
-}
-a{
-    text-decoration: none;
-}
-.image {
+article section {
     width: 100%;
 }
