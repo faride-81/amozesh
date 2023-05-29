@@ -108,10 +108,63 @@ header .input .search select {
 article{
     display: grid;
     grid-template-columns: 22% 22% 22% 22%;
-    margin: auto;
+    margin: 2rem auto;
     gap: 4%;
     width: 85%;
 }
 article section {
     width: 100%;
+    background-color: #ebf8e1;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 0;
+    border-radius: 0.2rem;
+    position: relative;
+}
+article section svg{
+    color: #ff9712;
+}
+article section .img {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 0.7rem;
+}
+article section .img img {
+    width: 100%;
+}
+article section .bacgrond {
+    display: none;
+    margin-top: 0.7rem;
+}
+article section .img:hover .bacgrond {
+    display: block;
+    background: linear-gradient(0.25turn, #0008ff, #5c5e5a, #ff9712);
+    width: 100%;
+    height: 50vh;
+    position: absolute;
+    opacity: 0.7;
+    top: 2rem;
+}
+article section .bacgrond p{
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    margin: 4rem 0.5rem;
+}
+article section .text {
+    width: 86%;
+    direction: rtl;
+    text-align: start;
+    margin: 0 auto;
+}
+article section .text a {
+    color: #706960;
+    text-decoration: none;
+}
+article section .text ins{
+    text-decoration: none;
+}
+article section .text a:hover{
+    font-weight: bolder;
+    color: #3f87a6;
 }
