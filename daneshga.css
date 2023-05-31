@@ -124,6 +124,25 @@ article section {
 article section svg{
     color: #ff9712;
 }
+article section .icon {
+    position: relative;
+}
+article section .icon p {
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    font-size: 0.8rem;
+    padding: 0.52rem 0;
+    text-align: center;
+    font-weight: bolder;
+    color: #ff9712;
+}
+
+article section .icon:hover p {
+    display: block;
+
+}
 article section .img {
     width: 90%;
     margin: 0 auto;
@@ -136,7 +155,7 @@ article section .bacgrond {
     display: none;
     margin-top: 0.7rem;
 }
-article section:hover .bacgrond {
+article section a .img:hover .bacgrond {
     display: block;
     background: linear-gradient(0.25turn, #0008ff, #5c5e5a, #ff9712);
     width: 100%;
