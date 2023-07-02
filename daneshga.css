@@ -30,48 +30,48 @@ header {
     width: 100%;
     padding: 0rem 0rem 4rem 0
 }
-header .header_container {
+header .header__container {
     justify-content: space-between;
     width: 90%;
     display: flex;
     flex-direction: row;
     margin: 0 auto;
 }
-header .header_container .header_container-left {
+header .header__container .header__container__left {
     display: flex;
     flex-direction: column;
 }
-header .header_container .header_container-left .left--p {
+header .header__container .header__container__left .left__p {
     font-weight: bolder;
     font-size: 2rem;
     color: #3f87a6;
 }
-header .left--input {
+header .left__input {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-header .left--input .left--search svg {
+header .left__input .left__search svg {
     color: #3b4042;
 }
-header .left--input .left--search input {
+header .left__input .left__search input {
     background-color: #dce8ed;
     padding: 0.2rem;
     color: #3f87a6;
     border: #b0b0f1 1px solid;
 }
-header .left--input .left--search select {
+header .left__input .left__search select {
     background-color: #dce8ed;
     border: #b0b0f1 1px solid;
     color: #3f87a6;
     margin-left: 1rem;
     padding: 0.1rem;
 }
-.header_container-right {
+.header__container__right {
     width: 20%;
     margin: 3rem 0 0 0;
 }
-.header_container-right .cube {
+.header__container__right .cube {
     position: relative;
     direction: rtl;
     transform-style: preserve-3d;
@@ -115,15 +115,14 @@ article .post {
     flex-direction: column;
     padding: 0.5rem 0;
     border-radius: 0.2rem;
-    position: relative;
 }
 article .post svg {
     color: #ff9712;
 }
-article .post .post--icon {
+article .post .post__icon {
     position: relative;
 }
-article .post .post--icon .post--p {
+article .post .post__icon .post__p {
     display: none;
     position: absolute;
     background-color: white;
@@ -134,52 +133,54 @@ article .post .post--icon .post--p {
     font-weight: bolder;
     color: #ff9712;
 }
-article .post .post--icon:hover .post--p {
+article .post .post__icon:hover .post__p {
     display: block;
 }
-article .post .post--img {
+article .post .post__img {
     width: 90%;
     margin: 0 auto;
     margin-top: 0.7rem;
 }
-article .post .post--img img {
+article .post .post__img img {
     width: 100%;
 }
-article .post .post--bacgrond {
-    display: none;
-    margin-top: 0.7rem;
+article .post .post__position {
+    position: relative;
 }
-article .post .post--position:hover .post--bacgrond {
+article .post .post__bacgrond {
+    display: none;
+}
+article .post .post__position:hover .post__bacgrond {
     display: block;
     background: linear-gradient(0.25turn, #0008ff, #5c5e5a, #ff9712);
     width: 100%;
-    height: 50vh;
     position: absolute;
     opacity: 0.7;
-    top: 2rem;
-    
+    top: -1rem;
+    margin-top: 0.7rem;
+    height: 100%;
 }
-article .post .post--bacgrond p {
+article .post .post__bacgrond p {
     color: white;
     font-weight: bolder;
     text-align: center;
     margin: 4rem 0.5rem;
 }
-article .post .post--text {
+article .post .post__text {
     width: 86%;
     direction: rtl;
     text-align: start;
     margin: 0 auto;
 }
-article .post .post--text a {
+article .post .post__text a {
     color: #706960;
     text-decoration: none;
 }
-article .post .post--text ins {
+article .post .post__text ins {
     text-decoration: none;
     font-size: 0.6rem;
 }
-article .post .post--text a:hover {
+article .post .post__text a:hover {
     font-weight: bolder;
     color: #3f87a6;
 }
@@ -187,21 +188,17 @@ article .post .post--text a:hover {
     article {
         grid-template-columns: auto auto auto;
     }
-    article .post .post--position:hover .post--bacgrond {
+    article .post .post__position:hover .post__bacgrond {
         font-size: 0.7rem;
-        height: 100%;
     }    
 }
 @media(max-width:700px) {
     article {
         grid-template-columns: auto auto;
     }
-    article .post .post--position:hover .post--bacgrond {
-        height: 70vh;
-    }
 }
 @media(max-width:500px) {
-    header .header_container {
+    header .header__container {
         flex-direction: column;
     }
 }
